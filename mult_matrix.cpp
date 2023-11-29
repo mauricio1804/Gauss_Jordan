@@ -49,6 +49,8 @@ int main(){
     preenche_matriz(v);
     preenche_matriz(v2);
 
+    cout << 3;
+
     soma_matriz(v, v2);
 
 }

@@ -50,6 +50,7 @@ void preenche_matriz(int v[][C]){
 
     for (i = 0; i < C; i++){
         for (j = 0; j < L; j++){
+            cout << "[" << i << ", " << j << " ]=";
             cin >> v[i][j];
         }
     }
@@ -59,11 +60,15 @@ void preenche_matriz(int v[][C]){
 int main(){
     int v[L][C], v2[L][C];
 
+    cout << "Preencha a primeira matriz: " << endl;
     preenche_matriz(v);
+    cout << "Preencha a segunda matriz: " << endl;
     preenche_matriz(v2);
 
+    cout << "A soma dessas matrizes e: " << endl;
     soma_matriz(v, v2);
 
+    cout << "A multiplicacao dessas matrizes e: " << endl;
     mult_matriz(v, v2);
 
 }

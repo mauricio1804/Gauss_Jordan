@@ -28,10 +28,8 @@ void mult_matriz(int v[][C], int v2[][C]){
         for (j = 0; j < L; j++){
             multiplicacao[i][j] = 0;
             for (k = 0; k < L; k++){
-                aux += v[i][k] * v2[k][j];
+                multiplicacao[i][j] += v[i][k] * v2[k][j];
             }
-            multiplicacao[i][j] = aux;
-            aux = 0;
         }
     }
 
@@ -70,5 +68,7 @@ int main(){
 
     cout << "A multiplicacao dessas matrizes e: " << endl;
     mult_matriz(v, v2);
+
+    getchar();
 
 }
